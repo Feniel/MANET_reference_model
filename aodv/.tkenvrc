@@ -1,0 +1,3 @@
+# Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "AODV_ReferenceNetwork" "AODV_ReferenceNetwork" "2" "651x342+52+52:normal"
+
