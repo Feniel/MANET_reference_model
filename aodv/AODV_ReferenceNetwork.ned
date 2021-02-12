@@ -34,10 +34,12 @@ network AODV_ReferenceNetwork
         int numHosts;
     submodules:
         Originator: AdhocHost {
-            @display("p=300,350");
+            parameters:
+            	@display("p=300,350");
         }
         Destination: AdhocHost {
-            @display("p=300,50");
+            parameters:
+            	@display("p=300,50");
         }
         host[numHosts]: AdhocHost {
             parameters:
