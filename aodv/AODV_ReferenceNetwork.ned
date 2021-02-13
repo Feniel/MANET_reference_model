@@ -33,17 +33,8 @@ network AODV_ReferenceNetwork
     parameters:
         int numHosts;
     submodules:
-        Originator: AdhocHost {
-            parameters:
-            	@display("p=300,350");
-        }
-        Destination: AdhocHost {
-            parameters:
-            	@display("p=300,50");
-        }
-        host[numHosts]: AdhocHost {
-            parameters:
-                @display("i=device/pocketpc_s;r=,,#707070;p=301,213");
+        node[numHosts]: AdhocHost {
+        	@display("i=device/pocketpc_s;r=,,#707070;p=300,200");
         }
         channelControl: ChannelControl {
             parameters:
