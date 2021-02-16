@@ -1,2 +1,4 @@
 # Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "AODV_ReferenceNetwork" "AODV_ReferenceNetwork" "2" "649x342+130+130:normal"
+inspector "simulation.scheduled-events.wlan-cts" "AirFrame" "1" "486x314+156+156:normal"
 

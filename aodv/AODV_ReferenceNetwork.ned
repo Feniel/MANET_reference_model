@@ -1,19 +1,8 @@
 //
-// Copyright (C) 2010 Alfonso Ariza
-//
-// This program is free software; you can redistribute it and/or
-// modify it under the terms of the GNU General Public License
-// as published by the Free Software Foundation; either version 2
-// of the License, or (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+// Network configuration file for the reference network. 
+// For communication via WLAN and in a MANET the 
+// IPv4NetworkConfigurator, ChannelControl and the AdhocHost 
+// class are included.
 //
 
 package inet.examples.references.aodv;
@@ -24,17 +13,25 @@ import inet.world.radio.ChannelControl;
 
 
 //
-// Example network for testing aodv routing. Contains
-// fixed and mobile nodes. Mobile nodes are not moving,
-// but are scattered randomly on the playground.
+// Reference network for simulations. Contains
+// mobile nodes and two paired nodes. All nodes are moving
+// and are scattered randomly on the map.
 //
 network AODV_ReferenceNetwork
 {
     parameters:
-        int numHosts;
+        int numNodes;
+        int numOriginator;
+        int numDestination;
     submodules:
-        node[numHosts]: AdhocHost {
-        	@display("i=device/pocketpc_s;r=,,#707070;p=300,200");
+        originator[numOriginator]: AdhocHost {
+            @display("p=138,271");
+        }
+        destination[numDestination]: AdhocHost {
+            @display("p=138,181");
+        }
+        node[numNodes]: AdhocHost {
+            @display("i=device/pocketpc_s;r=,,#707070;p=296,114");
         }
         channelControl: ChannelControl {
             parameters:
