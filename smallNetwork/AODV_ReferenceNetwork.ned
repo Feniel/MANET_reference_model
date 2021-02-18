@@ -5,7 +5,7 @@
 // class are included.
 //
 
-package inet.examples.references.aodv;
+package inet.examples.references.smallNetwork;
 
 import inet.networklayer.autorouting.ipv4.IPv4NetworkConfigurator;
 import inet.nodes.inet.AdhocHost;
@@ -17,7 +17,7 @@ import inet.world.radio.ChannelControl;
 // mobile nodes and two paired nodes. All nodes are moving
 // and are scattered randomly on the map.
 //
-network AODV_ReferenceNetwork
+network AODV_SmallReferenceNetwork
 {
     parameters:
         int numNodes;
