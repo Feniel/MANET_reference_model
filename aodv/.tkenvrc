@@ -1,3 +1,7 @@
 # Partial Tkenv config file -- see $HOME/.tkenvrc as well
 inspector "simulation.scheduled-events.wlan-cts" "AirFrame" "1" "486x314+156+156:normal"
+inspector "simulation.scheduled-events.wlan-cts" "AirFrame" "1" "486x314+156+156:normal"
+inspector "simulation.scheduled-events.wlan-cts" "AirFrame" "1" "486x314+156+156:normal"
+inspector "simulation.scheduled-events.wlan-cts" "AirFrame" "1" "486x314+156+156:normal"
+inspector "simulation.scheduled-events.wlan-cts" "AirFrame" "1" "486x314+156+156:normal"
 

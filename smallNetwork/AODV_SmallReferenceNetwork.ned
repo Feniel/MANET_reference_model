@@ -25,13 +25,16 @@ network AODV_SmallReferenceNetwork
         int numDestination;
     submodules:
         originator[numOriginator]: AdhocHost {
-            @display("p=138,270");
+            @display("p=599,200");
         }
         destination[numDestination]: AdhocHost {
-            @display("p=138,180");
+            @display("p=50,200");
         }
         node[numNodes]: AdhocHost {
-            @display("i=device/pocketpc_s;r=,,#707070;p=296,114");
+            @display("i=device/pocketpc_s;r=,,#707070;p=243,200");
+        }
+        secondNode[numNodes]: AdhocHost {
+            @display("i=device/pocketpc_s;r=,,#707070;p=413,200");
         }
         channelControl: ChannelControl {
             parameters:
